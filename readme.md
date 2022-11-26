@@ -4,8 +4,8 @@
 
 This is a cookbook of recipes that I use (or have used) across multiple JS/TS projects.
 
-1. Try-Catch made simpler
-2. Promise.then.catch.finally made simpler
+1. [Try-Catch made simpler](./try-catch-made-simpler.md)
+2. [Promise.then.catch.finally made simpler](./promise-made-simpler.md)
 3. Extracting keys from a list of objects
 4. Flattening an object
 5. Piping through functions
