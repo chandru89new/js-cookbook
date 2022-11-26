@@ -37,7 +37,7 @@ const testFn = (int) => {
 With `tryCatch`, you can wrap this so that it will never throw, but instead, return an error "safely".
 
 ```js
-const { data, err } = tryCatch(() => testFn(7)); // notice how we wrap `testFn(7)` as an arrow function / lamda
+const { data, err } = tryCatch(() => testFn(7)); // notice how we wrap `testFn(7)` as an arrow function / lambda
 if (err) console.log('Error:', err.toString());
 else console.log('Success!', data);
 ```
