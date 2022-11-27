@@ -5,11 +5,13 @@
 This is a cookbook of recipes that I use (or have used) across multiple JS/TS projects.
 
 1. [Try-Catch made simpler](./try-catch-made-simpler.md)
-2. [Promise.then.catch.finally made simpler](./promise-made-simpler.md)
-3. [Extracting keys from a list of objects](./extract-keys.md)
-4. Flattening an object
-5. Piping through functions
-6. Going from Array<Promise<Value>> to Promise<Array<Value>> when doing parallel promises
-7. Piping through throwing functions that can throw
-8. Safe, simple, sequential promises
-9. Advanced switch-case a.k.a Pattern Matching
+1. [Promise.then.catch.finally made simpler](./promise-made-simpler.md)
+1. [Extracting keys from a list of objects](./extract-keys.md)
+1. [Extract and flatten an object](./extract-and-flatten.md)
+1. Piping through functions
+1. Going from Array<Promise&lt;Value&gt;> to Promise<Array&lt;Value&gt;> when doing parallel promises
+1. Piping through functions that can throw an exception
+1. Safe, simple, sequential promises
+1. Advanced switch-case a.k.a Pattern Matching
+1. Trigger a file download
+1. Enrich an object with properties of another object
