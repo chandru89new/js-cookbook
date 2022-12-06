@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const downloadFile = ({ contents, fileName }) => {
+        try {
+          const file = new File([contents], fileName);
+          const link = document.createElement('a');
+          link.style.display = 'none';
+          link.href = URL.createObjectURL(file);
+          link.download = fileName;
+          document.body.appendChild(link);
+          link.click();
+          setTimeout(() => {
+            URL.revokeObjectURL(link.href);
+            document.body.removeChild(link);
+          }, 0);
+          return {};
+        } catch (e) {
+          return { err: e };
+        }
+      };
+      const triggerDownload = () => {
+        downloadFile({ contents: 'abcd', fileName: 'test.txt' });
+      };
+    </script>
+  </head>
+  <body>
+    <button onclick="triggerDownload()">Download</button>
+  </body>
+</html>
