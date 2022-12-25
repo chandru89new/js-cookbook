@@ -14,4 +14,4 @@ This is a cookbook of recipes that I use (or have used) across multiple JS/TS pr
 1. [Safe, simple, sequential promises](./sequential-promises.md)
 1. [Trigger a file download](./trigger-file-download.md)
 1. [Parallel promises made simple](./parallel-promises.md)
-1. Advanced switch-case a.k.a Pattern Matching
+1. [Advanced switch-case a.k.a Pattern Matching](./pattern-matching.md)
